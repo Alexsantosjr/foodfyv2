@@ -17,9 +17,9 @@ Site Foodfy
 [//]: # (Add your gifs/images here:)
 <div>
   <img src="https://imgur.com/1gx3aYl.png" alt="demo" height="425">
-  <img src="https://i.imgur.com/hWK2uL3.png" alt="demo" height="425">
-  <img src="https://imgur.com/dRKawCz.png" alt="demo" height="425">
   <img src="https://i.imgur.com/YT5FiZN.jpg" alt="demo" height="425">
+  <img src="https://imgur.com/dRKawCz.png" alt="demo" height="425">
+  <img src="https://i.imgur.com/hWK2uL3.png" alt="demo" height="425">
   <img src="https://imgur.com/32OLr4H.png" alt="demo" height="425">
 </div>
 
