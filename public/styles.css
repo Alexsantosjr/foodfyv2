@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+main{
+    margin: 0 auto;
+    max-width: 940px;
+}
+.container_header{
+    max-width: 940px;
+    padding-top: 40px;
+    padding-left: 300px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+.menu a{
+    color: black;
+    display: inline;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.menu a:hover{
+    color: salmon;
+    transition: 500ms ease-in-out 1ms;
+}
+.container{
+    max-width: 940px;
+    height: 366px;
+    background: #FBDFDB;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+.texts h2{
+    font-size: 32px;
+    padding-bottom: 10px
+}
+.texts p{
+    width: 316px;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+}
+.image_chef{
+     display: flex;
+     margin-left: 190px;
+     max-width: 940px;
+}
+.revenue_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+}
+.tittle_revenue{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.revenues img{
+    width: 300px;
+    height: 140px;
+    border-radius: 14px;
+}
+.revenues h3{
+    font-size: 18px;
+    line-height: 30px;
+}
+.revenues p{
+    font-size: 14px;
+}
+.footer{
+    margin-top: 40px;
+    height: 60px;
+    background: #EEEEEE;
+}
+.footer p{
+    padding-top: 20px;
+    text-align: center;
+    color: #999999;
+}
+.tittle_1 h1{
+    padding-bottom: 30px;
+}
+.tittle_1 p{
+    line-height: 28px;
+    word-wrap: break-word;
+}
+.p1{
+    padding-top: 30px;
+}
+.tittle_2 h1{
+    padding-top: 30px;
+}
+.tittle_2 p{
+    padding-top: 30px;
+    line-height: 28px;
+}
+.tittle_3 h1{
+    padding-top: 30px;
+}
+.tittle_3 p{
+    padding-top: 30px;
+    line-height: 28px;
+}
+.tittles{
+    padding-top: 30px;
+    text-align: left ;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal{
+    background-color: white;
+    width: 50%;
+    height: 55%;
+    border-radius: 15px;
+    margin: 20vh auto;
+    position: relative;
+}
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-content .img-modal{
+    border-radius: 15px;
+    position: absolute;
+    width: 35%;
+    height: 32%;
+    top: 25%;
+    left: 33%;
+}
+.modal-content .h3-modal{
+    text-align: center;
+    max-width: 940px;
+    position: absolute;
+    top: 61%;
+    left: 44%;
+}
+.modal-content .p-modal{
+    position: absolute;
+    top: 65%;
+    left: 46%;
+}
+.cards{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 940px;
+    cursor: pointer;
+    padding-top: 30px;
+}
+.wrapper{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-shadow: 2px 2px 5px rgb(109, 99, 99);
+    font-size: 15px;
+}
+.recipe_card{
+    margin: 0 auto;
+    text-align: center;
+}
+.recipe img{
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    width: 940px;
+}
+.recipe .revenue_author{
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: underline;
+}
+.recipe h2{
+    max-width: 940px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.recipe p{
+    padding-bottom: 10px;
+    line-height: 28px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-break: strict;
+}
+.revenue_description{
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 28px;
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-break: strict;
+    text-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.7);
+}
+.recipe li{
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    text-decoration: #999999;
+}
+
+/*Page Admin*/
+.menu_admin{
+    background: black;
+    width: 100%;
+    height: 80px;
+}
+
+.menu_admin img{
+    padding-top: 1.7%;
+    padding-left: 16.5%;
+}
+
+.card_admin{
+    margin: 0 auto;
+    width: 940px;
+}
+
+.header_admin{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 64px;
+    margin-bottom: 24px;
+
+}
+
+.header_admin h1{
+    font-size: 24px;
+}
+
+.item{
+    font-weight: bold;
+}
+
+button[type="submit"]{
+    background: #6558C3;
+    border-radius: 4px;
+    border-radius: 4px;
+    width: 139px;
+    height: 37px;
+    border-radius: 4px;
+    color: white;
+    position: relative;
+    left: 330px;
+}
+
+input{
+    margin-bottom: 3%;
+    width: 100%;
+    height: 49px;
+    outline: none;
+    border: 1px solid #DDDDDD;
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+input:first-child{
+    margin-top: 0.7%;
+}
+
+input::placeholder{
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+.input_size{
+    height: 257px;
+    font-weight: normal;
+}
+
+.add-ingredient{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #6558C3;
+    text-align: right;
+    top: -20px;
+    position: relative;
+    background-color: white;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}
+    <title>FoodFy</title>
+    {% endblock %}
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu_admin">
+            <img src="/images/logo_admin.png" alt="">
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+</body>
+<script src="/script.js"></script>
+</html>

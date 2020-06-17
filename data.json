@@ -1,0 +1,43 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "image": "https://gooutside-static-cdn.akamaized.net/wp-content/uploads/sites/3/2020/02/comida-porcaria-efeito-no-cerebro.jpg",
+      "description": "Leve a aguá moderna",
+      "ingredients": [
+        "Arroz"
+      ],
+      "infomax": "Nunca compre arroz parbolizado"
+    },
+    {
+      "id": 2,
+      "image": "https://gooutside-static-cdn.akamaized.net/wp-content/uploads/sites/3/2020/02/comida-porcaria-efeito-no-cerebro.jpg",
+      "description": "Leve a aguá moderna",
+      "ingredients": [
+        "Arroz"
+      ],
+      "infomax": "Nunca compre arroz parbolizado"
+    },
+    {
+      "id": 3,
+      "image": "https://gooutside-static-cdn.akamaized.net/wp-content/uploads/sites/3/2020/02/comida-porcaria-efeito-no-cerebro.jpg",
+      "description": "Leve a aguá moderna",
+      "ingredients": [
+        "Arroz",
+        "Batata"
+      ],
+      "infomax": "Nunca compre arroz parbolizado"
+    },
+    {
+      "id": 4,
+      "image": "https://gooutside-static-cdn.akamaized.net/wp-content/uploads/sites/3/2020/02/comida-porcaria-efeito-no-cerebro.jpg",
+      "description": "Leve a aguá moderna",
+      "ingredients": [
+        "Arroz",
+        "Arroz",
+        "Teste"
+      ],
+      "infomax": "Nunca compre arroz parbolizado"
+    }
+  ]
+}
