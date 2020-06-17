@@ -1,6 +1,6 @@
 const fs = require("fs")
 const data = require("../data.json")
-const newreceitas = require("../data")
+const newreceitas = require("../data.js")
 
 //Padrao
 exports.receitas = function(req, res){
