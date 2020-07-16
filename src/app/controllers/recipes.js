@@ -1,21 +1,16 @@
-<<<<<<< HEAD:controllers/recipes.js
-const fs = require("fs")
-const data = require("../data.json")
-const newreceitas = require("../data.js")
-=======
->>>>>>> integration database:src/app/controllers/recipes.js
+const Recipe = require("../models/recipe")
 
-//Padrao
-exports.receitas = function(req, res){
-    return res.render("receitas", {items: newreceitas})
-}
-exports.home = function(req, res){
+module.exports = {
+receitas(req, res){
+    return res.render("receitas")
+},
+home(req, res){
     return res.render("home")
-}
-exports.sobre = function(req, res){
+},
+sobre(req, res){
     return res.render("sobre")
-}
-exports.receita = function(req, res){
+},
+receita(req, res){
     const id =  req.query.id
    
     const receita = newreceitas.find(function(receita){
@@ -29,16 +24,11 @@ exports.receita = function(req, res){
     }
 
     return res.render("receita", { item: receita })
-}
-
-
-//create
-exports.create = function(req, res){
+},
+create(req, res){
     return res.render("admin/create")
-}
-
-//post
-exports.post = function(req, res){
+},
+post(req, res){
 
     const keys = Object.keys(req.body)
 
@@ -69,4 +59,8 @@ exports.post = function(req, res){
 
         return res.redirect('/')
     })
+},
+chef(req, res){
+    return res.render("chef/create")
+},
 }

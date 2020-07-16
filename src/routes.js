@@ -14,5 +14,8 @@ routes.get("/admin/create", recipes.create); // Mostrar formulário de nova rece
 //Admin Post
 routes.post("/admin", recipes.post); // Cadastrar nova receita
 
+//Chef Post
+routes.get("/chef/create/", recipes.chef);
+
 
 module.exports = routes
