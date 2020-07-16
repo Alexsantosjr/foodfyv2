@@ -7,7 +7,7 @@ const chefs = require("./app/controllers/chefs")
 routes.get("/receitas", recipes.receitas);
 routes.get("/", recipes.home);
 routes.get("/sobre", recipes.sobre);
-routes.get("/receita", recipes.receita);
+routes.get("/receita/:id", recipes.receita);
 
 //Admin 
 routes.get("/admin/recipe/create", recipes.create); // Mostrar formulário de nova receita
