@@ -327,3 +327,42 @@ input::placeholder{
     outline: none;
     cursor: pointer;
 }
+
+.chef_card{
+    background-color: white;
+    width: 800px;
+    min-height: 600px;
+    margin: 45px auto;
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.details h3{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.details{
+    text-transform: uppercase;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.details div{
+    padding-left: 8px;
+    padding-top: 5px;
+}
+
+.details input{
+    width: 350px;
+}
+
+.details button{
+    padding: 8px 32px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 100%;
+    
+}
