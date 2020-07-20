@@ -361,6 +361,10 @@ input::placeholder{
     width: 350px;
 }
 
+input{
+    padding-left: 8px;
+}
+
 .details .enviar{
     text-transform: uppercase;
     text-align: center;
