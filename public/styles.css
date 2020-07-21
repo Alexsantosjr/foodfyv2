@@ -376,7 +376,6 @@ input{
 .card-section-chef{
     margin: 45px auto;
     text-align: center;
-    max-height: 400px;
     
 }
 .header-section{
@@ -412,7 +411,29 @@ input{
     color: rgba(119,119,119,1);
     text-align: center;
 }
+.tittle-receitas{
+    margin-left: 16.4%;
+}
 .img-receita{
     width: 172px;
     height: 80px;
+    border-radius: 8.57px;
+    border-radius: 8,57px;
+}
+.receitas{
+    margin-top: 24px;
+    margin-left: 16.4%;
+    display: grid;
+    grid-template-columns: 190px 70px;
+    font-family: Roboto-Regular;
+}
+.receitas h3{
+    font-size: 18px;
+}
+.receitas p{
+    font-size: 14px;
+    color: #777777;
+}
+.receitas a{
+    text-decoration: none;
 }
