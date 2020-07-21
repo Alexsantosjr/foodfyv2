@@ -14,4 +14,7 @@ module.exports = {
             return res.redirect(`/chef/${chefs.id}`)
         })
     },
+    show(req,res){
+        return res.render("chef/show")
+    }
 }

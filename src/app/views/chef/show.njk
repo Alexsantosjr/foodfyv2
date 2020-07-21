@@ -1,0 +1,21 @@
+{% extends "layout_admin.njk" %}
+
+{% block content %}
+    <section class="card-section-chef">
+        <div class="header-section">
+            <h2>Chef: {{chefs.name}} </h2>
+            <button>Editar Chef</button>
+        </div>
+        <div class="header-section-avatar">
+            <img src="{{chefs.avatar_url}}" alt="">
+        </div>
+        <div class="header-section-avatar-tittle">
+            <h2>Alexandre Santos</h2>
+            <p>4 Receitas</p>
+        </div>
+    </section>
+    
+    <section>
+        <h1>Receitas</h1>
+    </section>
+{% endblock content %}
