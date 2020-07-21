@@ -17,5 +17,15 @@
     
     <section>
         <h1>Receitas</h1>
+        <div class="chef-receitas">
+            {% for receita in receitas %}
+            <div class="receitas">
+                <img class="img-receita" src="{{ recipe.avatar }}" alt="">
+                <h3>{{ recipe.tittle }}</h3>
+                <p>{{ recipe.author }}</p>
+                <button>Visualizar</button>
+            {% endfor %}
+            </div>
+        </div>
     </section>
 {% endblock content %}
