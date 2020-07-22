@@ -251,6 +251,12 @@ main{
     height: 80px;
 }
 
+.menu_admin a{
+    text-decoration: none;
+    color: white;
+    left: 100px;
+}
+
 .menu_admin img{
     padding-top: 1.7%;
     padding-left: 16.5%;
@@ -380,9 +386,16 @@ input{
 }
 .header-section{
     font-size: 24px;
+    font-weight: normal;
+    line-height: 28px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 46.3%;
+    margin: 0 auto;
+    margin-left: 48px;
+}
+.header-section h2{
+    font-size: 22px;
 }
 .header-section button{
     background: #6558C3;
@@ -398,9 +411,12 @@ input{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: black;
     margin: 0 auto;
     margin-top: 24px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 3px 1px 6px -4px black;
+    border: 2px solid white;
 }
 .header-section-avatar-tittle{
     margin-top: 20px;
@@ -431,9 +447,16 @@ input{
     font-size: 18px;
 }
 .receitas p{
+    margin-top: 8px;
+    margin-bottom: 8px;
     font-size: 14px;
     color: #777777;
 }
 .receitas a{
     text-decoration: none;
+    color: rgba(101,88,195,1);
+    font-weight: bold;
+}
+.card-receitas{
+    margin-bottom: 40px;
 }

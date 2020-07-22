@@ -1,4 +1,5 @@
 const Chef = require("../models/chef")
+const { date } = require("../../lib/utils")
 
 module.exports = {
     post(req, res){
@@ -14,7 +15,15 @@ module.exports = {
             return res.redirect(`/chef/${chefs.id}`)
         })
     },
-    show(req,res){
-        return res.render("chef/show")
+    show(req, res){
+
+        Chef.find(req.params.id, function(chefs){
+            if (!chefs) return res.send("Chef not found!")
+
+            chefs.created_at = date(chefs.created_at).format
+
+            return res.render("chef/show", { chefs })
+
+        })
     }
 }

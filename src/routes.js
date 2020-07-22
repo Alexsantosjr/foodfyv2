@@ -16,7 +16,7 @@ routes.get("/receita", recipes.receita);
 //Chef Post
 routes.get("/chef/create/", recipes.chef);
 routes.post("/chef/", chefs.post);
-routes.get("/chef/show", chefs.show)
+routes.get("/chef/:id", chefs.show)
 
 
 module.exports = routes
