@@ -10,6 +10,17 @@
             </div>
     </div>
 
+    <div class="item">
+        <div>Chef</div>
+            <div>
+                <select name="chef">
+                    <option value="{{ chef.id }}">
+                        {{ chef.name }}
+                    </option>
+                </select>
+            </div>
+    </div>
+
     <div id="ingredients"class="item">
         <div>Ingredientes</div>
             <div class="ingredient">
@@ -18,12 +29,13 @@
     </div>
     <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
 
-    <div class="item">
+    <div id="pass" class="item">
         <div>Modo de preparo</div>
-            <div>
+            <div class="pass-recipe">
                 <input name="description" type="text" value="">
             </div>
     </div>
+    <button type="button" class="add-pass">Adicionar novo passo</button>
 
     <div class="item">
         <div>Informações Adicionais</div>

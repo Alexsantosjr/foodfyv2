@@ -25,3 +25,17 @@ function addIngredient() {
   }
   
   document.querySelector(".add-ingredient").addEventListener("click", addIngredient);
+
+  function addPass(){
+      const pass = document.querySelector("#pass");
+      const fieldContainer = document.querySelectorAll(".pass-recipe")
+
+      const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+
+      if (newField.children[0].value == "") return false
+
+      newField.children[0].value = ""
+      pass.appendChild(newField)
+  }
+
+  document.querySelector(".add-pass").addEventListener("click", addPass)
