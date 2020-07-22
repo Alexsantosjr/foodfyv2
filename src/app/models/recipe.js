@@ -1,4 +1,5 @@
 const db = require("../../config/db")
+const { date } = require("../../lib/utils")
 
 module.exports = {
     create(data, callback){
@@ -6,8 +7,8 @@ module.exports = {
             INSERT INTO recipes(
                 tittle,
                 image,
-                ingredients[],
-                preparation[],
+                ingredients,
+                preparation,
                 information,
                 chef_id,
                 created_at
@@ -21,7 +22,7 @@ module.exports = {
             data.preparation,
             data.information,
             data.chef_id,
-            data(Date.now()).iso
+            date(Date.now()).iso
         ]
 
         db.query(query, values, function(err, results){

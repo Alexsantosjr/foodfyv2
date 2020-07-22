@@ -26,19 +26,13 @@ receita(req, res){
     return res.render("receita", { item: receita })
 },
 create(req, res){
-    return res.render("admin/create")
+    return res.render("admin/recipe/create")
 },
 post_create(req, res){
     const keys = Object.keys(req.body)
 
-    for (key of keys){
-        if (req.body[key] == ""){
-            return res.send("Please, fill all fields")
-        }
-    }
-
     Recipe.create(req.body, function (recipe){
-        return res.redirect(`/admin/create/${recipe.id}`)
+        return res.redirect(`/admin/recipe/${recipe.id}`)
     })
 },
 chef(req, res){

@@ -10,7 +10,7 @@ routes.get("/sobre", recipes.sobre);
 routes.get("/receita", recipes.receita);
 
 //Admin 
-routes.get("/admin/create", recipes.create); // Mostrar formulário de nova receita
+routes.get("/admin/recipe/create", recipes.create); // Mostrar formulário de nova receita
 routes.post("/admin/", recipes.post_create)
 //routes.post("/admin", recipes.post); // Cadastrar nova receita
 
