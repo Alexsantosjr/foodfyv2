@@ -1,48 +1,33 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-    <title>{{item.tittle}} - Foodfy</title> 
+    <title>{{ recipes.tittle }} - Foodfy</title> 
 {% endblock %}
 
 
 {% block content %}
 
     <div class="wrapper">
-        <h1>{{item.tittle}}</h1>
+        <h1>{{recipes.tittle}}</h1>
     </div>
 
     <section class="recipe_card ">
             <div class="recipe" id="{{item.id}}">
-                <img src="images/{{item.imagem}}" alt="">
-                <h2>Modo de preparo</h2>
-                <p class="revenue_description">{{item.description}}</p>
+                <img src="{{ recipes.image }}" alt="">
+                
                 <h2>Ingredientes</h2>
                 <p class="revenue_ingredients">
-                    <li>
-                        {{item.ingredient["0"]}}
-                    </li>
-
-                    <li>
-                        {{item.ingredient["1"]}}
-                    </li>
-
-                    <li>
-                        {{item.ingredient["2"]}}
-                    </li>
-
-                    <li>
-                        {{item.ingredient["3"]}}
-                    </li>
-
-                    <li>
-                        {{item.ingredient["4"]}}
-                    </li>
-
-                    <li>
-                        {{item.ingredient["5"]}}
-                    </li>
+                   {{recipes.ingredients}}
                 </p>
-                <p class="revenue_author">Autor {{item.author}}</p>
+
+                <h2>Modo de preparo</h2>
+                <p class="revenue_description">{{ recipes.preparation }}</p>
+                
+                <h2>Informações Adicionais</h2>
+                <p class="revenue_description">
+                    {{ recipes.information }}
+                </p>
+                <p class="revenue_author">Autor {{ recipes.chef_id }}</p>
             </div>
     </section>
 
