@@ -14,6 +14,8 @@ receita(req, res){
     Recipe.show(req.params.id, function(recipes){
         if (!recipes) return res.send("Recipe not found!")
 
+        recipes.ingredients= recipes.ingredients.split(",")
+
         return res.render("receita", {recipes})
     })
 },
